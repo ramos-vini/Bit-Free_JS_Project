@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bit Free | Quiz</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/quiz.css">
+</head>
+
+<body>
+    <div>
+        <header>
+            <nav>
+                <div class="headerNavDiv1">
+                    <a href="index.html">
+                        <h1 id="logo">Bit Free</h1>
+                    </a>
+                </div>
+
+                <div class="headerNavDiv2">
+                    <a href="quiz.html"><b>Quiz</b></a>
+                    <p>|</p>
+                    <a href="fale.html">Fale Conosco</a>
+                    <p>|</p>
+                    <a href="inscreva.html">Inscreva-se</a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div id="divCover" class="divCover">
+                <div class="divCoverGlass">
+                    <div>
+                        <h1>Que tal se divertir um pouco?</h1>
+                        <p>Estudar não precisa ser chato! Vamos testar um pouco dos seus conhecimentos com um Quiz
+                            interativo sobre tecnologia e informação. Você pode refazer as questões quantas vezes
+                            quiser, o intuito é aprender se divertindo!</p>
+                        <a href="#quiz"><input id="btVamos" type="button" value="Vamos!" onclick="iniciarQuiz()"></a>
+                    </div>
+
+                    <div>
+                        <img src="../assets/img/quiz_img_glass.png" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div id="containerResultado" class="divContainerResultado hide">
+                <div id="outResultado" class="divOutResultado">
+                    <h1 id="outh1">Parabéns!</h1>
+                    <h2 id="outh3">Você acertou 4/4 questões</h2>
+                    <input id="btGabarito" type="button" value="Ver Respostas" onclick="verRespostas()">
+                    <input id="btTentar" type="button" value="Tentar Novamente" onclick="reiniciarQuiz()">
+                    <section id="gabarito" class="hide">
+                        <p><b>1.</b> O HTML é considerado uma linguagem de: <b>(B) Marcação;</b></p>
+                        <p><b>2.</b> O CPU de um computador também é conhecido como: <b>(A) Processador;</b></p>
+                        <p><b>3.</b> O JavaScript é considerado uma linguagem de programação de tipagem: <b>(D)
+                                Dinâmica;</b></p>
+                        <p><b>4.</b> Uma unidade de Byte equivale a: <b>(A) 8 bits.</b></p>
+                    </section>
+                </div>
+            </div>
+
+            <div id="quiz" class="quizCompleto hide">
+                <div class="divQuiz">
+                    <h1>Hora do Quiz!</h1>
+                </div>
+
+                <div class="divPergunta">
+                    <section>
+                        <h2>O HTML é considerado uma linguagem de:</h2>
+                    </section>
+
+                    <section>
+                        <img src="../assets/img/quiz_perg1.svg" alt="">
+                    </section>
+
+                    <section>
+                        <h3 id="q1opA"
+                            onclick="mudarCores('q1opA', 'q1opB', 'q1opC', 'q1opD'), selecionarOpcao('1', 'a')"><b>A</b>
+                            - Programação</h3>
+
+                        <h3 id="q1opB"
+                            onclick="mudarCores('q1opB', 'q1opA', 'q1opC', 'q1opD'), selecionarOpcao('1', 'b')"><b>B</b>
+                            - Marcação</h3>
+
+                        <h3 id="q1opC"
+                            onclick="mudarCores('q1opC', 'q1opA', 'q1opB', 'q1opD'), selecionarOpcao('1', 'c')"><b>C</b>
+                            - Estilização</h3>
+
+                        <h3 id="q1opD"
+                            onclick="mudarCores('q1opD', 'q1opA', 'q1opB', 'q1opC'), selecionarOpcao('1', 'd')"><b>D</b>
+                            - Navegação</h3>
+                    </section>
+                </div>
+
+                <div class="divPergunta">
+                    <section>
+                        <h2>O CPU de um computador também é conhecido como:</h2>
+                    </section>
+
+                    <section>
+                        <img src="../assets/img/quiz_perg2.svg" alt="">
+                    </section>
+
+                    <section>
+                        <h3 id="q2opA"
+                            onclick="mudarCores('q2opA', 'q2opB', 'q2opC', 'q2opD'), selecionarOpcao('2', 'a')"><b>A</b>
+                            - Processador</h3>
+
+                        <h3 id="q2opB"
+                            onclick="mudarCores('q2opB', 'q2opA', 'q2opC', 'q2opD'), selecionarOpcao('2', 'b')"><b>B</b>
+                            - Gabinete</h3>
+
+                        <h3 id="q2opC"
+                            onclick="mudarCores('q2opC', 'q2opA', 'q2opB', 'q2opD'), selecionarOpcao('2', 'c')"><b>C</b>
+                            - Placa Mãe</h3>
+
+                        <h3 id="q2opD"
+                            onclick="mudarCores('q2opD', 'q2opA', 'q2opB', 'q2opC'), selecionarOpcao('2', 'd')"><b>D</b>
+                            - Memória RAM</h3>
+                    </section>
+                </div>
+
+                <div class="divPergunta">
+                    <section>
+                        <h2>O JavaScript é considerado uma linguagem de programação de tipagem:</h2>
+                    </section>
+
+                    <section>
+                        <img src="../assets/img/quiz_perg3.svg" alt="">
+                    </section>
+
+                    <section>
+                        <h3 id="q3opA"
+                            onclick="mudarCores('q3opA', 'q3opB', 'q3opC', 'q3opD'), selecionarOpcao('3', 'a')"><b>A</b>
+                            - Estática</h3>
+
+                        <h3 id="q3opB"
+                            onclick="mudarCores('q3opB', 'q3opA', 'q3opC', 'q3opD'), selecionarOpcao('3', 'b')"><b>B</b>
+                            - Booleana</h3>
+
+                        <h3 id="q3opC"
+                            onclick="mudarCores('q3opC', 'q3opA', 'q3opB', 'q3opD'), selecionarOpcao('3', 'c')"><b>C</b>
+                            - Numérica</h3>
+
+                        <h3 id="q3opD"
+                            onclick="mudarCores('q3opD', 'q3opA', 'q3opB', 'q3opC'), selecionarOpcao('3', 'd')"><b>D</b>
+                            - Dinâmica</h3>
+                    </section>
+                </div>
+
+                <div class="divPergunta divPerguntaLast">
+                    <section>
+                        <h2>Uma unidade de Byte equivale a:</h2>
+                    </section>
+
+                    <section>
+                        <img src="../assets/img/quiz_perg4.svg" alt="">
+                    </section>
+
+                    <section>
+                        <h3 id="q4opA"
+                            onclick="mudarCores('q4opA', 'q4opB', 'q4opC', 'q4opD'), selecionarOpcao('4', 'a')"><b>A</b>
+                            - 8 bits</h3>
+
+                        <h3 id="q4opB"
+                            onclick="mudarCores('q4opB', 'q4opA', 'q4opC', 'q4opD'), selecionarOpcao('4', 'b')"><b>B</b>
+                            - 16 bits</h3>
+
+                        <h3 id="q4opC"
+                            onclick="mudarCores('q4opC', 'q4opA', 'q4opB', 'q4opD'), selecionarOpcao('4', 'c')"><b>C</b>
+                            - 32 bits</h3>
+
+                        <h3 id="q4opD"
+                            onclick="mudarCores('q4opD', 'q4opA', 'q4opB', 'q4opC'), selecionarOpcao('4', 'd')"><b>D</b>
+                            - 64 bits</h3>
+                    </section>
+                </div>
+
+                <div class="divResultado">
+                    <input id="btResultado" type="button" value="Ver meu resultado!" onclick="mostrarResultado()">
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div>
+        <footer>
+            <div>
+                <h1>Bit Free © 2022</h1>
+
+                <p>Todos os Direitos Reservados.</p>
+            </div>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <p>|</p>
+                <a href="quiz.html"><b>Quiz</b></a>
+                <p>|</p>
+                <a href="fale.html">Fale Conosco</a>
+                <p>|</p>
+                <a href="inscreva.html">Inscreva-se</a>
+            </nav>
+        </footer>
+    </div>
+
+    <script src="../js/quiz.js"></script>
+</body>
+
+</html>

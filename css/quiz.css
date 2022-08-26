@@ -1,0 +1,233 @@
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 100vh;
+}
+
+header {
+    min-height: 5vh;
+}
+
+main {
+    text-align: center;
+    min-height: 80vh;
+}
+
+footer {
+    margin: 0;
+    min-height: 15vh;
+}
+
+h1 {
+    font-size: 2.8em;
+    transition: 0.5s;
+    margin: 0;
+}
+
+h2 {
+    font-size: 1.4em;
+}
+
+h3 {
+    font-size: 1.0em;
+    font-weight: normal;
+}
+
+p {
+    line-height: 1.8em;
+}
+
+main {
+    background-image: url(../assets/img/quiz_cover.png);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.divCover {
+    padding: 6% 10%;
+}
+
+.divCoverGlass {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 3% 5%;
+    margin: 0 auto;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+    box-shadow: 0 0 16px 0 #430a6771;
+    backdrop-filter: blur(13px);
+    display: flex;
+    text-align: left;
+}
+
+.divCoverGlass>div:first-of-type {
+    width: 60%;
+    padding-right: 10%;
+}
+
+.divCoverGlass>div:first-of-type>p {
+    margin: 6% 0;
+}
+
+.divCoverGlass>div:nth-of-type(2) {
+    width: 40%;
+}
+
+.divCoverGlass>div:nth-of-type(2)>img {
+    width: 100%;
+    border-radius: 6px;
+}
+
+.quizCompleto {
+    padding: 6% 0;
+}
+
+.divQuiz {
+    padding: 3% 0;
+    background-color: white;
+    color: #440A67;
+}
+
+.divPergunta {
+    padding: 3% 0;
+}
+
+.divPergunta {
+    padding: 3% 0;
+    background-color: white;
+}
+
+.divPergunta section:first-of-type {
+    padding: 1%;
+    box-shadow: 0 0px 5px rgba(128, 128, 128, 0.8);
+    background-color: white;
+}
+
+.divPergunta section:nth-of-type(2) img {
+    margin: 3%;
+    width: 20%;
+}
+
+.divPergunta section:last-of-type {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    padding: 0 25%;
+}
+
+.divPergunta h3 {
+    background-color: #93329E;
+    color: white;
+    border-radius: 6px;
+    width: 48%;
+    margin: 1%;
+    text-align: left;
+    padding: 2%;
+}
+
+.divPergunta h3:hover {
+    background-color: #430a67e5;
+    cursor: pointer;
+}
+
+.divPerguntaLast {
+    padding-bottom: 6%;
+}
+
+.divResultado {
+    padding-top: 6%;
+}
+
+input[type="button"] {
+    border: 2px solid #93329E;
+    color: #93329E;
+    background-color: white;
+    transition: 0.3s;
+}
+
+input[type="button"]:hover {
+    background-color: #440A67;
+    transition: 0.3s;
+    color: white;
+    border-color: white;
+    box-shadow: 0px 0px 5px #440A67;
+}
+
+#btVamos {
+    padding: 3% 6%;
+    color: white;
+    border-color: white;
+    background-color: transparent;
+}
+
+#btVamos:hover {
+    background-color: #440A67;
+    box-shadow: 0px 0px 3px white;
+    transition: 0.3s;
+}
+
+#btResultado {
+    color: white;
+    border-color: white;
+
+    background-color: rgba(255, 255, 255, 0.1);
+    box-shadow: 0 0 16px 0 #430a6771;
+    backdrop-filter: blur(13px);
+}
+
+#btResultado:hover {
+    background-color: #440A67;
+    box-shadow: 0px 0px 3px white;
+    transition: 0.3s;
+}
+
+/* Classes de manipulação com JS: */
+
+.divOutput {
+    display: none;
+}
+
+.divContainerResultado {
+    padding: 10% 25%;
+}
+
+.divOutResultado {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+    padding: 3%;
+    border: 1px solid rgba(255, 255, 255, 0.15);
+    border-radius: 6px;
+    box-shadow: 0 0 16px 0 #430a6771;
+    backdrop-filter: blur(13px);
+}
+
+#btGabarito,
+#btTentar {
+    padding: 3% 6%;
+    color: white;
+    border-color: white;
+    background-color: transparent;
+    margin: 3% 0;
+    width: 60%;
+}
+
+#btGabarito:hover,
+#btTentar:hover {
+    background-color: #440A67;
+    box-shadow: 0px 0px 3px white;
+    transition: 0.3s;
+}
+
+.opSelecionada {
+    background-color: #440A67 !important;
+    font-weight: bold !important;
+}
+
+.hide {
+    display: none !important;
+}
+
+.show {
+    display: block !important;
+}

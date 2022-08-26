@@ -1,0 +1,259 @@
+@font-face {
+    font-family: catalish;
+    src: url(../assets/fontes/catalish.otf);
+}
+
+@font-face {
+    font-family: autologo;
+    src: url(../assets/fontes/autologo.otf);
+}
+
+@font-face {
+    font-family: blueberry;
+    src: url(../assets/fontes/blueberry.otf);
+}
+
+@font-face {
+    font-family: ibm;
+    src: url(../assets/fontes/ibm.ttf);
+}
+
+@font-face {
+    font-family: logobloqo;
+    src: url(../assets/fontes/logobloqo.ttf);
+}
+
+@font-face {
+    font-family: logoplexi;
+    src: url(../assets/fontes/logoplexi.otf);
+}
+
+@font-face {
+    font-family: morning;
+    src: url(../assets/fontes/morning.otf);
+}
+
+@font-face {
+    font-family: ndlogos;
+    src: url(../assets/fontes/ndlogos.ttf);
+}
+
+main {
+    text-align: center;
+}
+
+.mainDiv1 {
+    background-color: #93329E;
+    background-blend-mode: soft-light;
+    color: white;
+    background-image: url(../assets/img/index_cover.png);
+    background-position: 0px 50%;
+    background-size: cover;
+    padding-left: 20%;
+    padding-right: 20%;
+}
+
+.mainDiv1 h1 {
+    text-shadow: 0px 0px 2px white;
+    transition: 0.5s;
+}
+
+.mainDiv1:hover h1 {
+    text-shadow: 0px 0px 4px white;
+    transition: 0.5s;
+}
+
+.mainDiv1 h3 {
+    font-weight: bold;
+    letter-spacing: 0.07em;
+    text-shadow: 0px 0px 4px #440A67;
+}
+
+#btInscreva {
+    border: 2px solid white;
+    color: white;
+    background-color: #93329E;
+    margin: 3%;
+    transition: 0.3s;
+    box-shadow: 0px 0px 5px #440A67;
+}
+
+#btInscreva:hover {
+    box-shadow: 0px 0px 5px white;
+    background-color: #440A67;
+    transition: 0.3s;
+}
+
+.mainDiv2sec {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 7%;
+}
+
+.mainDiv2sec span h2 {
+    color: #93329E;
+    transition: 0.5s;
+}
+
+.mainDiv2sec span:hover h2 {
+    color: white;
+    transition: 0.5s;
+}
+
+.mainDiv2sec span {
+    border-radius: 6px;
+    width: 45%;
+    padding: 2%;
+    transition: 0.5s;
+}
+
+.mainDiv2sec span:hover {
+    background-color: #440A67;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.mainDiv2sec img {
+    width: 20%;
+}
+
+.mainDiv3 {
+    background-color: #440A67;
+    color: white;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.mainDiv3sec1 {
+    padding-bottom: 3%;
+    padding-right: 15%;
+    padding-left: 15%;
+}
+
+.mainDiv3sec2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mainDiv3sec2 span {
+    width: 14%;
+}
+
+.mainDiv3sec2 span:first-child {
+    text-align: right;
+}
+
+.mainDiv3sec2 span:last-child {
+    text-align: left;
+}
+
+.mainDiv3sec2 p {
+    font-size: 1.2em;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+.mainDiv3sec2 span img {
+    width: 90%;
+    border-radius: 500px;
+    margin-bottom: 10%;
+    transition: 0.5s;
+}
+
+.mainDiv3sec2 span:hover img {
+    width: 100%;
+    margin-bottom: 0;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.mainDiv3sec2 span:hover p {
+    color: white;
+}
+
+.mainDiv3sec2 span h1:hover {
+    cursor: pointer;
+    text-shadow: 0px 0px 2px white;
+}
+
+.mainDiv4sec1 {
+    margin-bottom: 8%;
+}
+
+.mainDiv4sec2Empresas {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 5%;
+}
+
+.mainDiv4sec2Empresas span {
+    color: #93329E;
+    border-radius: 6px;
+    padding: 2%;
+    transition: 0.5s;
+}
+
+.mainDiv4sec2Empresas span:hover {
+    background-color: #440A67;
+    color: white;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+.mainDiv4sec2Empresas span p {
+    visibility: hidden;
+    color: white;
+}
+
+.mainDiv4sec2Empresas span:hover p {
+    visibility: visible;
+}
+
+#empresa1 {
+    font-family: catalish;
+}
+
+#empresa2 {
+    font-family: autologo;
+}
+
+#empresa3 {
+    font-family: blueberry;
+}
+
+#empresa4 {
+    font-family: ibm;
+}
+
+#empresa5 {
+    font-family: logobloqo;
+}
+
+#empresa6 {
+    font-family: logoplexi;
+}
+
+#empresa7 {
+    font-family: morning;
+}
+
+#empresa8 {
+    font-family: ndlogos;
+}
+
+.mainDiv4sec3 input[type="button"] {
+    margin-top: 3%;
+    border: 2px solid #93329E;
+    color: #93329E;
+    background-color: white;
+    margin-top: 3%;
+    transition: 0.3s;
+}
+
+.mainDiv4sec3 input[type="button"]:hover {
+    background-color: #440A67;
+    transition: 0.3s;
+    color: white;
+    border-color: white;
+    box-shadow: 0px 0px 5px #440A67;
+}

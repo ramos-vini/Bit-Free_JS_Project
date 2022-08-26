@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bit Free | Fale Conosco</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/fale.css">
+</head>
+
+<body>
+    <div>
+        <header>
+            <nav>
+                <div class="headerNavDiv1">
+                    <a href="index.html">
+                        <h1 id="logo">Bit Free</h1>
+                    </a>
+                </div>
+
+                <div class="headerNavDiv2">
+                    <a href="quiz.html">Quiz</a>
+                    <p>|</p>
+                    <a href="fale.html"><b>Fale Conosco</b></a>
+                    <p>|</p>
+                    <a href="inscreva.html">Inscreva-se</a>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <div class="mainDiv">
+                <div>
+                    <h1>Fale Conosco</h1>
+                    <h3>Precisa falar conosco? Preencha os campos ao lado com as informações necessárias e em breve um
+                        de
+                        nossos
+                        responsáveis entrará em contato.</h3>
+                </div>
+
+                <div>
+                    <form action="">
+                        <section>
+                            <span>
+                                <label for="inNome">Nome</label>
+                                <input id="inNome" type="text" required onblur="verificarNome('inNome', 'outErro1')">
+                                <p id="outErro1" class="outErro hide"><i>Campo Inválido*</i></p>
+                            </span>
+
+                            <span>
+                                <label for="inSobrenome">Sobrenome</label>
+                                <input id="inSobrenome" type="text" required
+                                    onblur="verificarNome('inSobrenome', 'outErro2')">
+                                <p id="outErro2" class="outErro hide"><i>Campo Inválido*</i></p>
+                            </span>
+                        </section>
+                        <section>
+                            <label for="inEmail">E-mail</label>
+                            <input type="email" id="inEmail" required onblur="verificarEmail('inEmail', 'outErro3')">
+                            <p id="outErro3" class="outErro hide"><i>Campo Inválido*</i></p>
+                        </section>
+                        <section>
+                            <label for="inTextArea">Como podemos lhe ajudar?</label>
+                            <textarea id="inTextArea" maxlength="500" required
+                                onblur="verificarString('inTextArea', 'outErro4')"></textarea>
+                            <p id="outErro4" class="outErro hide"><i>Campo Inválido*</i></p>
+                        </section>
+                        <section>
+                            <input id="btEnviar" type="submit" value="Enviar">
+                        </section>
+                    </form>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div>
+        <footer>
+            <div>
+                <h1>Bit Free © 2022</h1>
+
+                <p>Todos os Direitos Reservados.</p>
+            </div>
+
+            <nav>
+                <a href="index.html">Home</a>
+                <p>|</p>
+                <a href="quiz.html">Quiz</a>
+                <p>|</p>
+                <a href="fale.html"><b>Fale Conosco</b></a>
+                <p>|</p>
+                <a href="inscreva.html">Inscreva-se</a>
+            </nav>
+        </footer>
+    </div>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>

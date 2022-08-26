@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+@font-face {
+    font-family: technoma;
+    src: url(../assets/fontes/technoma.otf);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    font-weight: bold;
+}
+
+header>nav {
+    display: flex;
+    align-items: center;
+}
+
+.headerNavDiv1 {
+    width: 100%;
+}
+
+#logo {
+    font-family: technoma;
+    color: #440A67;
+    font-size: 2.0em;
+}
+
+.headerNavDiv2 {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    color: #440A67;
+}
+
+.headerNavDiv2 a {
+    margin-left: 5%;
+    margin-right: 3%;
+    color: #440A67;
+}
+
+body {
+    padding: 0%;
+    margin: 0%;
+}
+
+header,
+footer {
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+main>div {
+    padding-right: 15%;
+    padding-left: 15%;
+    padding-top: 3%;
+    padding-bottom: 3%;
+}
+
+h1 {
+    font-size: 3.5em;
+}
+
+h2 {
+    font-size: 2.0em;
+}
+
+h3 {
+    font-size: 1.4em;
+    line-height: 1.8em;
+}
+
+p {
+    font-size: 1.2em;
+}
+
+input[type="button"] {
+    border: none;
+    border-radius: 6px;
+    padding: 2% 4%;
+    font-weight: bold;
+    font-size: 1.0em;
+    cursor: pointer;
+}
+
+input[type="submit"] {
+    border: none;
+    border-radius: 6px;
+    padding: 2%;
+    padding-right: 4%;
+    padding-left: 4%;
+    font-weight: bold;
+    font-size: 1.0em;
+    cursor: pointer;
+}
+
+footer {
+    background-color: #440A67;
+    color: white;
+    text-align: center;
+    padding: 2%;
+    margin-top: 3%;
+}
+
+footer h1 {
+    font-size: 1.2em;
+}
+
+footer p {
+    font-size: 1.0em;
+}
+
+footer nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2%;
+}
+
+footer nav a {
+    margin-left: 2%;
+    margin-right: 2%;
+    color: white;
+}
+
+footer nav p {
+    margin: 0;
+}

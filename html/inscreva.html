@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bit Free | Inscreva-se</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/inscreva.css">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="headerNavDiv1">
+                <a href="index.html">
+                    <h1 id="logo">Bit Free</h1>
+                </a>
+            </div>
+
+            <div class="headerNavDiv2">
+                <a href="quiz.html">Quiz</a>
+                <p>|</p>
+                <a href="fale.html">Fale Conosco</a>
+                <p>|</p>
+                <a href="inscreva.html"><b>Inscreva-se</b></a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <div class="mainDiv1">
+            <h1>Inscreva-se Gratuitamente</h1>
+            <h3>Preencha os campos do formulário abaixo com os seus dados caso tenha interesse em se tornar um aluno da
+                <b>Bit Free</b>. Entraremos em contato em breve com mais informações sobre o processo seletivo, bolsas
+                de
+                estudo e modalidades de
+                ensino disponíveis. Venha construir o seu futuro com a gente!
+            </h3>
+        </div>
+
+        <div class="mainDiv2">
+            <form action="">
+                <section>
+                    <span>
+                        <label for="inNome">Nome</label>
+                        <span>
+                            <input id="inNome" type="text" required onblur="verificarNome('inNome', 'outErro1')">
+                            <p id="outErro1" class="outErro hide"><i>Campo Inválido*</i></p>
+                        </span>
+                    </span>
+                    <span>
+                        <label for="inSobrenome">Sobrenome</label>
+                        <span>
+                            <input id="inSobrenome" type="text" required
+                                onblur="verificarNome('inSobrenome', 'outErro2')">
+                            <p id="outErro2" class="outErro hide"><i>Campo Inválido*</i></p>
+                        </span>
+                    </span>
+                </section>
+
+                <section>
+                    <span>
+                        <label for="inEndereco">Endereço</label>
+                        <span>
+                            <input id="inEndereco" type="text" required
+                                onblur="verificarString('inEndereco', 'outErro3')">
+                            <p id="outErro3" class="outErro hide"><i>Campo Inválido*</i></p>
+                        </span>
+                    </span>
+                    <span>
+                        <label for="inCidade">Cidade</label>
+                        <span>
+                            <input id="inCidade" type="text" required onblur="verificarString('inCidade', 'outErro4')">
+                            <p id="outErro4" class="outErro hide"><i>Campo Inválido*</i></p>
+                        </span>
+                    </span>
+                    <span>
+                        <label for="inUF">UF</label>
+                        <span>
+                            <select name="" id="stUF" required onclick="verificarString('stUF', 'outErro5')">
+                                <option value=""></option>
+                                <option value="AC">AC</option>
+                                <option value="AL">AL</option>
+                                <option value="AP">AP</option>
+                                <option value="AM">AM</option>
+                                <option value="BA">BA</option>
+                                <option value="CE">CE</option>
+                                <option value="DF">DF</option>
+                                <option value="ES">ES</option>
+                                <option value="GO">GO</option>
+                                <option value="MA">MA</option>
+                                <option value="MT">MT</option>
+                                <option value="MS">MS</option>
+                                <option value="MG">MG</option>
+                                <option value="PA">PA</option>
+                                <option value="PB">PB</option>
+                                <option value="PR">PR</option>
+                                <option value="PE">PE</option>
+                                <option value="PI">PI</option>
+                                <option value="RJ">RJ</option>
+                                <option value="RN">RN</option>
+                                <option value="RS">RS</option>
+                                <option value="RO">RO</option>
+                                <option value="RR">RR</option>
+                                <option value="SC">SC</option>
+                                <option value="SP">SP</option>
+                                <option value="SE">SE</option>
+                                <option value="TO">TO</option>
+                            </select>
+                            <p id="outErro5" class="outErro hide"><i>Campo Inválido*</i></p>
+                        </span>
+                    </span>
+                    <span>
+                        <label for="inCEP">CEP</label>
+                        <span>
+                            <input id="inCEP" type="text" minlength="8" maxlength="8" required
+                                onblur="verificarCEP('inCEP', 'outErro6')" onkeyup="formatarNumero('inCEP')">
+                            <p id="outErro6" class="outErro hide"><i>Campo Inválido*</i></p>
+                        </span>
+                    </span>
+                </section>
+
+                <section>
+                    <span>
+                        <label for="inCelular">Celular <i>(DDD + Telefone)</i></label>
+                        <span>
+                            <input id="inCelular" type="text" minlength="10" maxlength="11" required
+                                onblur="verificarCelular('inCelular', 'outErro7')"
+                                onkeyup="formatarNumero('inCelular')">
+                            <p id="outErro7" class="outErro hide"><i>Campo Inválido*</i></p>
+                        </span>
+                    </span>
+                    <span>
+                        <label for="inTelefone">E-mail</label>
+                        <span>
+                            <input id="inEmail" type="email" required
+                                onblur="verificarEmail('inEmail', 'outErro8'), confirmarEmail('inEmail', 'inConfirmarEmail', 'outErro9')">
+                            <p id="outErro8" class="outErro hide"><i>Campo Inválido*</i></p>
+                        </span>
+                    </span>
+                    <span>
+                        <label for="inEmail">Confirmar e-mail</label>
+                        <span>
+                            <input id="inConfirmarEmail" type="email" required
+                                onblur="confirmarEmail('inEmail', 'inConfirmarEmail', 'outErro9')">
+                            <p id="outErro9" class="outErro hide"><i>Campo Inválido*</i></p>
+                        </span>
+                    </span>
+                </section>
+
+                <section>
+                    <span>
+                        <label for="inDataNascimento">Data de Nascimento</label>
+                        <span>
+                            <input id="inDataNascimento" type="date" min="1900-01-01" required
+                                onblur="verificarString('inDataNascimento', 'outErro10')">
+                            <p id="outErro10" class="outErro hide"><i>Campo Inválido*</i></p>
+                        </span>
+                    </span>
+                    <span>
+                        <p>Sexo</p>
+                        <span>
+                            <input id="rdSexoMasculino" type="radio" name="rdSexo" required>
+                            <label for="rdSexoMasculino">Masculino</label>
+                            <input id="rdSexoFeminino" type="radio" name="rdSexo" required>
+                            <label for="rdSexoFeminino">Feminino</label>
+                            <p id="outErro11" class="outErro hide"><i>Campo Inválido*</i></p>
+                        </span>
+                    </span>
+                    <span>
+                        <label for="stRenda">Faixa de renda mensal</label>
+                        <span>
+                            <select name="" id="stRenda" required onclick="verificarString('stRenda', 'outErro12')">
+                                <option value=""></option>
+                                <option value="2500">Até R$ 2.500,00</option>
+                                <option value="5000">Até R$ 5.000,00</option>
+                                <option value="10000">Até R$ 10.000,00</option>
+                                <option value="10000+">Acima de R$ 10.000,00</option>
+                            </select>
+                            <p id="outErro12" class="outErro hide"><i>Campo Inválido*</i></p>
+                        </span>
+                    </span>
+                </section>
+
+                <section>
+                    <span>
+                        <label for="stEducacao">Nível Educacional</label>
+                        <span>
+                            <select name="" id="stEducacao" required
+                                onclick="verificarString('stEducacao', 'outErro13')">
+                                <option value=""></option>
+                                <option value="Fundamental">Ensino Fundamental</option>
+                                <option value="Médio">Ensino Médio</option>
+                                <option value="Superior">Ensino Superior</option>
+                                <option value="Pós">Pós-Graduação</option>
+                            </select>
+                            <p id="outErro13" class="outErro hide"><i>Campo Inválido*</i></p>
+                        </span>
+                    </span>
+                    <span>
+                        <label for="stLivros">Quantos livros você tem em casa?</label>
+                        <span>
+                            <select name="" id="stLivros" required onclick="verificarString('stLivros', 'outErro14')">
+                                <option value=""></option>
+                                <option value="10">Até 10 livros</option>
+                                <option value="20">Até 20 livros</option>
+                                <option value="50">Até 50 livros</option>
+                                <option value="50+">Acima de 50 livros</option>
+                            </select>
+                            <p id="outErro14" class="outErro hide"><i>Campo Inválido*</i></p>
+                        </span>
+                    </span>
+                    <span>
+                        <p>Tem proficiência na língua inglesa?</p>
+                        <span>
+                            <span>
+                                <input id="rdInglesSim" type="radio" name="rdIngles" required>
+                                <label for="rdInglesSim">Sim</label>
+                                <input id="rdInglesNao" type="radio" name="rdIngles" required>
+                                <label for="rdInglesNao">Não</label>
+                            </span>
+                            <p id="outErro15" class="outErro hide"><i>Campo Inválido*</i></p>
+                        </span>
+                    </span>
+                </section>
+
+                <section>
+                    <span>
+                        <p>Possui um computador de uso pessoal?</p>
+                        <span>
+                            <input id="rdPCSim" type="radio" name="rdPC" required>
+                            <label for="rdPCSim">Sim</label>
+                            <input id="rdPCNao" type="radio" name="rdPC" required>
+                            <label for="rdPCNao">Não</label>
+                            <p id="outErro16" class="outErro hide"><i>Campo Inválido*</i></p>
+                        </span>
+                    </span>
+                    <span>
+                        <p>Tem casa própria?</p>
+                        <span>
+                            <input id="rdCasaSim" type="radio" name="rdCasa" required>
+                            <label for="rdCasaSim">Sim</label>
+                            <input id="rdCasaNao" type="radio" name="rdCasa" required>
+                            <label for="rdCasaNao">Não</label>
+                            <p id="outErro17" class="outErro hide"><i>Campo Inválido*</i></p>
+                        </span>
+                    </span>
+                    <span>
+                        <p>Já fez alguma viagem para o exterior?</p>
+                        <span>
+                            <input id="rdViagemSim" type="radio" name="rdViagem" required>
+                            <label for="rdViagemSim">Sim</label>
+                            <input id="rdViagemNao" type="radio" name="rdViagem" required>
+                            <label for="rdViagemNao">Não</label>
+                            <p id="outErro18" class="outErro hide"><i>Campo Inválido*</i></p>
+                        </span>
+                    </span>
+                </section>
+
+                <section>
+                    <span>
+                        <p>Quais dessas redes sociais você utiliza com frequência?</p>
+                        <span class="spanBlock">
+                            <section>
+                                <input type="checkbox" name="facebook" id="inFacebook" required>
+                                <label for="inFacebook">Facebook</label>
+                            </section>
+                            <section>
+                                <input type="checkbox" name="instagram" id="inInstagram" required>
+                                <label for="inInstagram">Instagram</label>
+                            </section>
+                            <section>
+                                <input type="checkbox" name="twitter" id="inTwitter" required>
+                                <label for="inTwitter">Twitter</label>
+                            </section>
+                            <section>
+                                <input type="checkbox" name="linkedin" id="inLinkedin" required>
+                                <label for="inLinkedin">LinkedIn</label>
+                            </section>
+                            <section>
+                                <input type="checkbox" name="nenhuma" id="inNenhuma" required>
+                                <label for="inNenhuma">Nenhuma</label>
+                            </section>
+                        </span>
+                        <p id="outErro19" class="outErro hide"><i>Campo Inválido*</i></p>
+                    </span>
+                    <span>
+                        <p>Como você ficou sabendo da <b>Bit Free</b>?</p>
+                        <span class="spanBlock spanBlock2">
+                            <section>
+                                <input type="checkbox" name="Redes Sociais" id="inRedes" required>
+                                <label for="inRedes">Redes Sociais</label>
+                            </section>
+                            <section>
+                                <input type="checkbox" name="Pesquisa no Google" id="inPesquisa" required>
+                                <label for="inPesquisa">Pesquisa no Google</label>
+                            </section>
+                            <section>
+                                <input type="checkbox" name="Indicação" id="inIndicacao" required>
+                                <label for="inIndicacao">Indicação</label>
+                            </section>
+                            <section>
+                                <input type="checkbox" name="Outro" id="inOutro" required>
+                                <label for="inOutro">Outro</label>
+                            </section>
+                        </span>
+                        <p id="outErro20" class="outErro hide"><i>Campo Inválido*</i></p>
+                    </span>
+                </section>
+                <div>
+                    <input id="btEnviar" type="submit" value="Enviar">
+                </div>
+            </form>
+        </div>
+    </main>
+
+    <footer>
+        <div>
+            <h1>Bit Free © 2022</h1>
+
+            <p>Todos os Direitos Reservados.</p>
+        </div>
+
+        <nav>
+            <a href="index.html">Home</a>
+            <p>|</p>
+            <a href="quiz.html">Quiz</a>
+            <p>|</p>
+            <a href="fale.html">Fale Conosco</a>
+            <p>|</p>
+            <a href="inscreva.html"><b>Inscreva-se</b></a>
+        </nav>
+    </footer>
+
+    <script src="../js/script.js"></script>
+</body>
+
+</html>
